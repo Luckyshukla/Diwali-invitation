@@ -101,7 +101,7 @@ form .button-add {
   color: #fff;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 768px) {
   body{
     margin: 0;
     padding: 0;
@@ -112,14 +112,23 @@ form .button-add {
     flex-direction: column;
     height: auto;
     width: auto;
+    padding: 114px;
   }
   .container .left{
-    width: 75%;
+    width: 50%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    width: 800px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
